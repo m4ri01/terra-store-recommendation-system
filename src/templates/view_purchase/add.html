@@ -1,0 +1,76 @@
+{% include 'parts/header.html' %}
+{% include 'parts/sidebar.html' %}
+ 
+ <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <h1 class="m-0">User Purchase Data</h1>
+          </div><!-- /.col -->
+          <div class="col-sm-6">
+            <ol class="breadcrumb float-sm-right">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item active">User Purchase Data</li>
+            </ol>
+          </div><!-- /.col -->
+        </div><!-- /.row -->
+      </div><!-- /.container-fluid -->
+    </div>
+    <!-- /.content-header -->
+
+    <!-- Main content -->
+    <section class="content">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            <div class="card card-primary">
+                <div class="card-header">
+                  <h3 class="card-title">Add Data User Purchase </h3>
+                </div>
+                <!-- /.card-header -->
+                <!-- form start -->
+                <form action="{{url_for("purchase_add")}}" method="POST" >
+                  <div class="card-body">
+                    <div class="form-group">
+                        <label for="user_id">Name</label>
+                        <select class="custom-select rounded-0" name="user_id" id="user_id" required>
+                        {% for item in user_result%}
+                          <option value="{{item.id}}">{{item.name}}</option>
+                        {% endfor %}
+                        </select>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="product_id">Product Name</label>
+                    <select class="custom-select rounded-0" name="product_id" id="product_id" required>
+                    {% for item in product_result%}
+                      <option value="{{item.id}}">{{item.product_name}}</option>
+                    {% endfor %}
+                    </select>
+                    </div>
+                    <div class="form-group">
+                      <label for="ratings">Ratings</label>
+                      <input step=".01" type="number" name="ratings" class="form-control" id="ratings" placeholder="Insert User Ratings" required>
+                    </div>
+                    
+                  <!-- /.card-body -->
+  
+                  <div class="card-footer">
+                    <button type="submit" class="btn btn-primary">Save</button>
+                  </div>
+                </form>
+              </div>
+            <!-- /.card -->
+          </div>
+          <!-- /.col -->
+        </div>
+      </div><!-- /.container-fluid -->
+    </section>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+
+  {% include 'parts/footer.html' %}

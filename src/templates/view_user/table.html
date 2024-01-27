@@ -1,0 +1,40 @@
+              <!-- /.card-header -->
+              <div class="card-body">
+                <table id="example1" class="table table-bordered table-striped">
+                  <thead>
+                  <tr>
+                    <th>No.</th>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Action</th>
+                  </tr>
+                  </thead>
+                  <tbody>
+                    {% for item in result%}
+                    <tr>
+                      <td>{{loop.index}}</td>
+                      <td>{{item.name}}</td>
+                      <td>{{item.address}}</td>
+                      <td>
+                        <form action="{{url_for("user_delete",id=item.id)}}" method="POST">
+                            <a href="{{url_for("user_edit_page",id=item.id)}}" class="btn btn-warning">
+                                <i class="fa fa-pencil-alt"></i>
+                                Edit
+                            </a>
+                            <a href="{{url_for("recsys_predict",id=item.id)}}" class="btn btn-success">
+                              <i class="fa fa-pencil-alt"></i>
+                              Predict
+                          </a>
+                        
+                            <button class="btn btn-danger">
+                                <i class="fa fa-trash"></i>
+                                Delete
+                            </button>
+                        </form>
+                      </td>
+                    </tr>
+                    {% endfor %}
+                  </tbody>
+                </table>
+              </div>
+              <!-- /.card-body -->

@@ -1,0 +1,46 @@
+,uuid,product_id,category,price,ratings,product_name
+0,2f618641-2a8a-4ffa-b49d-515a0eaae45f,101,Electronics,500,4.5,TV
+1,08b549c6-99b2-4d6c-9d7e-89df74d62dde,102,Clothing,50,3.8,Shirt
+2,b113b7f9-acea-4ae5-9df6-1cb15bd63826,103,Home & Kitchen,200,4.2,Juicer
+3,4588f2cf-f218-49c3-8905-83b58a3c94cf,104,Beauty,30,4.0,Lipstick
+4,99dc5b92-d684-45b6-8130-8702d94d189e,105,Electronics,800,4.8,Computer
+5,0d5b9e49-9bda-4ecf-95e7-e9b26d2e4b43,106,Electronics,778,4.8,Speaker
+6,caa7377d-8a80-4615-8bb1-630f6624dec0,107,Electronics,708,4.72,Handphone
+7,bbaba35c-834e-4e7a-811d-d448fa61a266,108,Electronics,505,4.48,Vacum Cleaner
+8,fca57bf4-db76-45ce-b9ac-afb7e29fabeb,109,Electronics,683,4.69,Mouse
+9,d2bc7ee1-32ee-4aad-b752-6283ef2e9843,110,Electronics,645,4.65,Microphone
+10,99cca2e9-af87-4c48-98e4-06e86fe66ec8,111,Electronics,753,4.77,Fan
+11,f7b7f05c-8c14-4e88-b033-9674773df6dd,112,Electronics,768,4.79,AC
+12,18a1e80a-b606-4226-93b4-0f814e04bb9e,113,Electronics,658,4.66,Monitor
+13,3cfa1a7c-302d-400c-9ae6-582997766e4e,114,Electronics,794,4.82,Refrigerator
+14,b7b28ad6-53d8-4739-b4fe-52bb1365e7f6,115,Electronics,771,4.79,Printer
+15,20272a33-86a4-445d-8587-b0d72c2da188,116,Clothing,10,3.9,Pants
+16,1286f2b1-039e-422c-9c36-60823b067555,117,Clothing,39,3.94,Jacket
+17,95bacff7-a12d-45e3-a4e4-5602446cd3c5,118,Clothing,85,3.99,Hat
+18,6202b68b-dc35-4e97-ac4e-012a4e4a0dc9,119,Clothing,27,3.92,Gloves
+19,b0cf96b3-7fd5-42ef-9c53-3a3a92020e1f,120,Clothing,41,3.94,T-Shirt
+20,515a64a1-c0b7-4e53-95f4-f3e0672499d5,121,Clothing,42,3.94,Sandals
+21,d6becca9-2f2b-4b5e-a57e-3d08ee158a56,122,Clothing,78,3.98,Shoes
+22,d6c0dfe6-666e-4251-acab-f34768c22fb4,123,Clothing,21,3.91,Jeans
+23,50b14a60-192b-4d02-9637-e97d6e6c90fa,124,Clothing,82,3.99,Socks
+24,db0e1bb3-fd35-4b39-9162-71da07578904,125,Clothing,96,4.0,Bracelet
+25,17693b0f-6a1d-43e3-bd85-e08d51f7f972,126,Home & Kitchen,143,4.06,Knife
+26,78e883d4-7a8d-477a-9444-422e728e96db,127,Home & Kitchen,252,4.18,Spoon
+27,20415698-3eaa-438c-99e5-197164e20361,128,Home & Kitchen,239,4.17,Fork
+28,3e86cb05-71c4-4dfb-9a87-bf7917e7d189,129,Home & Kitchen,160,4.08,Plate
+29,15df8cff-f3e2-40d7-ba34-88e3885140ad,130,Home & Kitchen,123,4.03,Stove
+30,8fb91420-a066-49c8-a023-fcd71ed02b83,131,Home & Kitchen,167,4.09,Pan
+31,f996a98f-d79c-4823-b005-d4a23800e234,132,Home & Kitchen,240,4.17,Frying Pan
+32,7a608351-a6ca-4d4d-aedc-c3d72a1afda2,133,Home & Kitchen,296,4.24,Kettle
+33,b10602ce-f482-4f28-9694-8becfd82d63a,134,Home & Kitchen,289,4.23,Cup
+34,df929bff-0d02-42b9-85e8-0fc6cf5c19ae,135,Home & Kitchen,218,4.15,Bowl
+35,3161f741-967b-4e60-922b-8296dbfa009e,136,Beauty,20,3.91,Eyeliner
+36,b4ddd990-455b-41fb-965e-83344b5efb6b,137,Beauty,14,3.91,Skincare
+37,20e9535a-5643-4bf8-9e04-2b9fb5e4feb2,138,Beauty,14,3.91,Mascara
+38,d744495e-228a-4f43-9939-54265a03785f,139,Beauty,65,3.97,Liptint
+39,1774dd47-036d-445f-a337-ff0a06d37bd4,140,Beauty,49,3.95,Parfume
+40,ccc58b1a-f0eb-4070-9e55-e9e5fb43fddf,141,Beauty,35,3.93,Powder
+41,b017e77d-9c47-448c-b1d7-a79499c9355a,142,Beauty,40,3.94,Foundation
+42,2bcd00ad-e2a3-4ea2-85e0-ef89dbbf3d86,143,Beauty,34,3.93,Concealor
+43,a93a9ddb-4b63-43f9-9340-2ebafaaa41ea,144,Beauty,16,3.91,BB Cream
+44,a3d886ef-5758-4d10-8849-948c4ac8586a,145,Beauty,19,3.91,Blush On

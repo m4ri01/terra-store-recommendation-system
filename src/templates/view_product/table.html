@@ -1,0 +1,40 @@
+              <!-- /.card-header -->
+              <div class="card-body">
+                <table id="example1" class="table table-bordered table-striped">
+                  <thead>
+                  <tr>
+                    <th>No.</th>
+                    <th>Product Name</th>
+                    <th>Category</th>
+                    <th>Price</th>
+                    <th>Ratings</th>
+                    <th>Actions</th>
+                  </tr>
+                  </thead>
+                  <tbody>
+                    {% for item in result%}
+                    <tr>
+                      <td>{{loop.index}}</td>
+                      <td>{{item.product_name}}</td>
+                      <td>{{item.category}}</td>
+                      <td>{{item.price}}</td>
+                      <td>{{item.ratings}}</td>
+                      <td>
+                        <form action="{{url_for("product_delete",id=item.id)}}" method="POST">
+                            <a href="{{url_for("product_edit_page",id=item.id)}}" class="btn btn-warning">
+                                <i class="fa fa-pencil-alt"></i>
+                                Edit
+                            </a>
+                        
+                            <button class="btn btn-danger">
+                                <i class="fa fa-trash"></i>
+                                Delete
+                            </button>
+                        </form>
+                      </td>
+                    </tr>
+                    {% endfor %}
+                  </tbody>
+                </table>
+              </div>
+              <!-- /.card-body -->

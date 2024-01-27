@@ -1,0 +1,38 @@
+              <!-- /.card-header -->
+              <div class="card-body">
+                <table id="example1" class="table table-bordered table-striped">
+                  <thead>
+                  <tr>
+                    <th>No.</th>
+                    <th>Name</th>
+                    <th>Page Views</th>
+                    <th>Time Spent</th>
+                    <th>Action</th>
+                  </tr>
+                  </thead>
+                  <tbody>
+                    {% for item in result%}
+                    <tr>
+                      <td>{{loop.index}}</td>
+                      <td>{{item.name}}</td>
+                      <td>{{item.page_views}}</td>
+                      <td>{{item.time_spent}}</td>
+                      <td>
+                        <form action="{{url_for("interactions_delete",id=item.id)}}" method="POST">
+                            <a href="{{url_for("interactions_edit_page",id=item.id)}}" class="btn btn-warning">
+                                <i class="fa fa-pencil-alt"></i>
+                                Edit
+                            </a>
+                        
+                            <button class="btn btn-danger">
+                                <i class="fa fa-trash"></i>
+                                Delete
+                            </button>
+                        </form>
+                      </td>
+                    </tr>
+                    {% endfor %}
+                  </tbody>
+                </table>
+              </div>
+              <!-- /.card-body -->

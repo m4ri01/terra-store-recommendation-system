@@ -1,0 +1,31 @@
+version: '3'
+services:
+  db:
+    container_name: skilvul_db
+    image: postgres
+    restart: always
+    volumes:
+    - db_data:/var/lib/postgresql/data/:rw
+    environment:
+      POSTGRES_USER: ${SQL_USER}
+      POSTGRES_PASSWORD: ${SQL_PASSWORD}
+      POSTGRES_DB: ${SQL_DB}
+      PGDATA: /var/lib/postgresql/data/
+    ports:
+      - "${SQL_PORT_OUT}:${SQL_PORT}"
+  web:
+    container_name: web_service
+    build:
+      context: .
+      args: 
+        - PORT=${WEB_PORT}
+    restart: always
+    depends_on:
+      - db
+    ports:
+      - "${WEB_PORT_OUT}:${WEB_PORT}"
+    volumes:
+      - alembic_versions:/app/alembic/versions
+volumes:
+  db_data:
+  alembic_versions:

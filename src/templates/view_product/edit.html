@@ -1,0 +1,80 @@
+{% include 'parts/header.html' %}
+{% include 'parts/sidebar.html' %}
+ 
+ <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <h1 class="m-0">Product Data</h1>
+          </div><!-- /.col -->
+          <div class="col-sm-6">
+            <ol class="breadcrumb float-sm-right">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item active">Product Data</li>
+            </ol>
+          </div><!-- /.col -->
+        </div><!-- /.row -->
+      </div><!-- /.container-fluid -->
+    </div>
+    <!-- /.content-header -->
+
+    <!-- Main content -->
+    <section class="content">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            <div class="card card-primary">
+                <div class="card-header">
+                  <h3 class="card-title">Edit Data User </h3>
+                </div>
+                <!-- /.card-header -->
+                <!-- form start -->
+                <form action="{{url_for("product_edit",id=result.id)}}" method="POST" >
+                  <div class="card-body">
+                    <div class="form-group">
+                      <label for="product_name">Product Name</label>
+                      <input type="text" value="{{result.product_name}}" name="product_name" class="form-control" id="product_name" placeholder="Insert Product Name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                      <label for="category">Category</label>
+                      <select class="form-control" id="category" name="category" required>
+                        <option {% if  result.category == "electronics" %} selected {% endif %} value="electronics">Electronics</option>
+                        <option {% if  result.category == "clothing" %} selected {% endif %} value="clothing">Clothing</option>
+                        <option {% if  result.category == "home_kitchen" %} selected {% endif %} value="home_kitchen">Home & Kitchen</option>
+                        <option {% if  result.category == "beauty" %} selected {% endif %} value="beauty">Beauty</option>
+                      </select>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="price">Price</label>
+                      <input value="{{result.price}}" type="number"  name="price" class="form-control" id="price" placeholder="Insert Price" required>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="ratings">Ratings</label>
+                      <input value="{{result.ratings}}" type="number"  name="ratings" class="form-control" step=".01" id="ratings" placeholder="Insert Ratings" required>
+                    </div>
+                    
+
+                  <!-- /.card-body -->
+  
+                  <div class="card-footer">
+                    <button type="submit" class="btn btn-primary">Save</button>
+                  </div>
+                </form>
+              </div>
+            <!-- /.card -->
+          </div>
+          <!-- /.col -->
+        </div>
+      </div><!-- /.container-fluid -->
+    </section>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+
+  {% include 'parts/footer.html' %}
