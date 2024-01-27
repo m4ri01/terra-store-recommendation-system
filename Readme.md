@@ -37,3 +37,7 @@ python3 seed.py # Seed the default data to website
 ```
 
 To open the website, you can open `http://YOUR_LOCAL_OR_PUBLIC_IP_ADDRESS:WEB_PORT_OUT`. Please check the `.env.example` for the WEB_PORT_OUT.
+
+## TL;DR  
+If you want to learn about the software documentation design of this website, you can read this [file](docs/SoftwareDesignDocumentationTerraStore.pdf).
+For the EDA, Preprocessing, Feature Engineering, and Model Training can be read in this Jupyter notebook [file](jupyter-notebook/User_Recommendation.ipynb)
