@@ -1,0 +1,55 @@
+  <!-- Main Sidebar Container -->
+  <aside class="main-sidebar sidebar-dark-primary elevation-4">
+    <!-- Brand Logo -->
+    <a href="#" class="brand-link">
+      <img src="{{ url_for('static', path='assets/img/check.png') }}" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+      <span class="brand-text font-weight-light">Terra Store</span>
+    </a>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+
+      <!-- Sidebar Menu -->
+      <nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+          <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+          <li class="nav-item">
+            <a href="{{url_for('user_show_page')}}" class="nav-link">
+              <i class="nav-icon fas fa-user"></i>
+              <p>
+                User Data
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="{{url_for('product_show_page')}}" class="nav-link">
+              <i class="nav-icon fas fa-percent"></i>
+              <p>
+                Product Data
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="{{url_for('interactions_show_page')}}" class="nav-link">
+              <i class="nav-icon fas fa-table"></i>
+              <p>
+                User Interactions Data
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="{{url_for('purchase_show_page')}}" class="nav-link">
+              <i class="nav-icon fas fa-cubes"></i>
+              <p>
+                Purchase Data
+              </p>
+            </a>
+          </li>
+
+        </ul>
+      </nav>
+      <!-- /.sidebar-menu -->
+    </div>
+    <!-- /.sidebar -->
+  </aside>
